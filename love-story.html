@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Thu Yêu Anh Hoàng Phú Xuyên</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #ffb6c1 0%, #ffc0cb 50%, #ffe4e1 100%);
+            min-height: 100vh;
+        }
+        
+        header {
+            background: rgba(255, 105, 180, 0.9);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            font-style: italic;
+        }
+        
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ffb6c1;
+            text-decoration: underline;
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            background-color: rgba(255, 255, 255, 0.95);
+            margin: 2rem 0;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            border-left: 5px solid #ff69b4;
+        }
+        
+        h2 {
+            color: #d91e63;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #ffb6c1;
+            padding-bottom: 0.8rem;
+        }
+        
+        h3 {
+            color: #ff69b4;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .story-text {
+            font-size: 1.05rem;
+            line-height: 2;
+            color: #404040;
+            margin: 1.5rem 0;
+            text-align: justify;
+            text-indent: 2rem;
+        }
+        
+        .quote {
+            font-style: italic;
+            color: #d91e63;
+            font-size: 1.1rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: #fff0f5;
+            border-left: 4px solid #ff69b4;
+            border-radius: 5px;
+        }
+        
+        .heart {
+            color: #ff1493;
+            font-size: 1.3rem;
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        
+        .characters {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .character-card {
+            background: linear-gradient(135deg, #ffb6c1, #ffc0cb);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .character-card h4 {
+            font-size: 1.5rem;
+            color: #d91e63;
+            margin-bottom: 1rem;
+        }
+        
+        .character-card p {
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        .emoji {
+            font-size: 3rem;
+            margin: 1rem 0;
+        }
+        
+        ul {
+            margin-left: 2.5rem;
+            margin-top: 1rem;
+        }
+        
+        li {
+            margin: 0.8rem 0;
+            color: #404040;
+        }
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .footer-text {
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span class="heart">❤️</span> Em Thu Yêu Anh Hoàng Phú Xuyên <span class="heart">❤️</span></h1>
+        <p>Một câu chuyện tình yêu ngọt ngào và đẹp đẽ</p>
+    </header>
+    
+    <nav>
+        <a href="#story">Câu Chuyện</a>
+        <a href="#characters">Nhân Vật</a>
+        <a href="#moments">Những Khoảnh Khắc</a>
+        <a href="lien-he.html">Liên Hệ</a>
+    </nav>
+    
+    <main>
+        <section id="story">
+            <h2><span class="heart">💕</span> Câu Chuyện Tình Yêu</h2>
+            
+            <div class="story-text">
+                Vào một ngày thứ hai bình thường, khi mặt trời mới nhô ra ngoài chân trời, em Thu đã cảm nhận được sự tồn tại của anh Hoàng Phú Xuyên. Từ những tia nắng sớm mai đầu tiên, em biết rằng cuộc sống sắp thay đổi.
+            </div>
+            
+            <div class="quote">
+                "Tình yêu không phải là tìm kiếm ai đó để sống cùng, mà là tìm thấy ai đó muốn sống cùng bạn" - Một suy tư trong trái tim em Thu
+            </div>
+            
+            <h3>Sự Bắt Đầu</h3>
+            <div class="story-text">
+                Họ gặp nhau lần đầu tiên trong một ngày đẹp trời. Anh Hoàng Phú Xuyên với vẻ mặt hiền lành, những nụ cười ấm áp, và hành động chu đáo đã chinh phục trái tim em Thu ngay từ cái nhìn đầu tiên. Không phải vì sắc đẹp nổi bật, mà vì những thứ vô hình - tấm lòng, sự chân thành, và cách anh nhìn em như thể cả thế giới chỉ có em.
+            </div>
+            
+            <h3>Những Ngày Thương Lắm</h3>
+            <div class="story-text">
+                Từng ngày trôi qua, tình cảm giữa hai người ngày càng sâu sắc. Anh không phải một hoàng tử trong câu chuyện cổ tích, nhưng anh là một người đàn ông thực thụ - với những yếu đuối, những sợ hãi, nhưng cùng lúc đó tràn đầy tình yêu. Em Thu yêu anh không vì anh hoàn hảo, mà vì anh cố gắng mỗi ngày để trở thành phiên bản tốt hơn của chính mình.
+            </div>
+            
+            <div class="quote">
+                "Yêu anh, là yêu cả những điều anh chưa yêu về chính mình"
+            </div>
+            
+            <h3>Sự Hiện Diện Của Tình Yêu</h3>
+            <div class="story-text">
+                Tình yêu của em Thu dành cho anh Hoàng Phú Xuyên không phải những lời ngôn tình hoa mỹ hay những cử chỉ ngoạn mục. Nó thể hiện qua những điều nhỏ bé - là để anh thấy em luôn ở đó, là hiểu anh ngay cả khi anh không cần nói, là hỗ trợ anh trong từng bước chân. Tình yêu này là liên tục, là bền bỉ, là sự lựa chọn mỗi ngày.
+            </div>
+        </section>
+        
+        <section id="characters">
+            <h2>Nhân Vật Chính</h2>
+            <div class="characters">
+                <div class="character-card">
+                    <div class="emoji">👩‍🦱</div>
+                    <h4>Em Thu</h4>
+                    <p>
+                        Một cô gái với trái tim nhân hậu, những giấc mơ lớn lao, và tình yêu sâu sắc. Em Thu là người tin vào tình yêu thực thụ, người sẵn sàng hy sinh lợi ích cá nhân vì người mình yêu. Cô là ánh sáng trong những ngày tối tăm của anh.
+                    </p>
+                </div>
+                
+                <div class="character-card">
+                    <div class="emoji">👨‍🦰</div>
+                    <h4>Anh Hoàng Phú Xuyên</h4>
+                    <p>
+                        Một người đàn ông trưởng thành, có ý chí mạnh mẽ và tấm lòng nhân hậu. Anh không là một nhân vật hoàn hảo, nhưng anh là một người chân thành, yêu em Thu từ tất cả tâm huyết của mình. Anh là vỏ bảo vệ em khi em yếu đuối.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="moments">
+            <h2><span class="heart">✨</span> Những Khoảnh Khắc Đáng Nhớ</h2>
+            <ul>
+                <li><strong>Nụ cười đầu tiên:</strong> Khi anh cười, ánh sáng hạnh phúc bừa lên trên khuôn mặt anh và em Thu biết rằng cô sẽ yêu anh mãi mãi.</li>
+                <li><strong>Bàn tay chạm nhau:</strong> Lần đầu tiên bàn tay anh nắm lấy bàn tay em, cả hai đều cảm thấy một điều gì đó thay đổi trong đời mình.</li>
+                <li><strong>Những cuộc nói chuyện đêm khuya:</strong> Những lúc thao thức đêm khuya, khi họ chia sẻ từng suy nghĩ, từng nỗi sợ, từng giấc mơ.</li>
+                <li><strong>Sự hỗ trợ trong khó khăn:</strong> Khi em Thu gặp khó khăn, anh Hoàng Phú Xuyên luôn ở đó, níu tay em, cho em biết rằng anh sẽ không bao giờ rời bỏ em.</li>
+                <li><strong>Lời hứa mãi mãi:</strong> Những lời hứa yên tĩnh, không phải những lời hứa hoa mỹ, mà những lời hứa thực thụ về tương lai chung.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Ý Nghĩa Của Tình Yêu Này</h2>
+            
+            <h3><span class="heart">💖</span> Tình Yêu Là Sự Chọn Lựa</h3>
+            <div class="story-text">
+                Tình yêu giữa em Thu và anh Hoàng Phú Xuyên không phải là một tai nạn, mà là một sự lựa chọn. Mỗi ngày, cả hai đều chọn để yêu nhau, chọn để ở bên cạnh nhau, chọn để xây dựng tương lai chung. Đó là bản chất thực sự của tình yêu.
+            </div>
+            
+            <h3><span class="heart">💞</span> Tình Yêu Là Sự Hiểu Thông Cảm</h3>
+            <div class="story-text">
+                Em Thu hiểu anh không phải vì anh hoàn hảo, mà vì em sẵn sàng nhìn thấy anh với khuyết điểm, với nỗi sợ, với những khiếm khuyết - và yêu toàn bộ anh, chứ không chỉ phần dễ nhất.
+            </div>
+            
+            <h3><span class="heart">💝</span> Tình Yêu Là Sự Phát Triển Cùng Nhau</h3>
+            <div class="story-text">
+                Với nhau, em Thu và anh Hoàng Phú Xuyên không chỉ là những người bạn, mà là hai học trò của cuộc sống, cùng nhau học cách yêu sâu hơn, tin tưởng nhiều hơn, và hy sinh lớn hơn.
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p class="footer-text"><span class="heart">❤️</span> Em Thu yêu anh Hoàng Phú Xuyên - Một tình yêu bền bỉ và chân thành <span class="heart">❤️</span></p>
+        <p>&copy; 2026. Những tình yêu đẹp đẽ giữa hai tâm hồn.</p>
+    </footer>
+</body>
+</html>
